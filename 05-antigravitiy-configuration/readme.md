@@ -16,7 +16,7 @@ The **Agent Manager** is a dedicated dashboard that bifurcates the IDE, separati
 The **Model Context Protocol (MCP)** is an open standard that connects the AI to the outside world.
 * **Capabilities:** Through MCP, the agent can read live databases, query tickets, or execute cloud commands.
 * **Project Context:** For this project, you would enable the **Firebase MCP** to allow the agent to create projects and enable services autonomously in your Google Cloud console.
-
+* **MCP Server (view raw config):**
 ```json
 "stitch": {
   "serverUrl": "https://stitch.googleapis.com/mcp",
