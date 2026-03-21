@@ -1,10 +1,12 @@
-# Slides
+<img width="2752" height="1536" alt="unnamed" src="https://github.com/user-attachments/assets/3edccc1f-2e88-4e0c-b901-7b87c061f5f1" /># Slides
 
 This directory contains the core visual materials for the workshop. The progression of these decks is designed to shift the developer’s mindset: from a manual artisan to a **System Architect and AI Orchestrator**.
 
 ---
 
 ## Slide Deck Overviews
+
+<img width="2752" height="1536" alt="unnamed" src="https://github.com/user-attachments/assets/7c10a520-4843-440d-af8f-0d285cdec9ff" />
 
 ### 1. The Vibe Coding Paradox: Mastery & Risks
 **File:** `Vibe-Coding-Paradox.pdf`
