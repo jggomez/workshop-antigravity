@@ -17,6 +17,16 @@ The **Model Context Protocol (MCP)** is an open standard that connects the AI to
 * **Capabilities:** Through MCP, the agent can read live databases, query tickets, or execute cloud commands.
 * **Project Context:** For this project, you would enable the **Firebase MCP** to allow the agent to create projects and enable services autonomously in your Google Cloud console.
 
+```json
+"stitch": {
+  "serverUrl": "https://stitch.googleapis.com/mcp",
+  "headers": {
+    "X-Goog-Api-Key": ""
+  },
+  "disabled": true
+}
+```
+
 #### **4. Rules: The "Laws" of the Workspace**
 Rules are baseline instructions the agent **must always follow** without being reminded in the chat.
 
