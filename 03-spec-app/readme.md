@@ -81,3 +81,8 @@ Present the final backlog in a Markdown table with the following structure:
 
 ### Historical Data
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/7d61ccb2-aa72-48dc-82c1-8330077df940" />
+
+---
+
+## Copy Spec.md
+### Please copy spec.md to the Antigravity workspace for this workshop.
