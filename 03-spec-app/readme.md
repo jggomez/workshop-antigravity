@@ -12,6 +12,22 @@ We are moving away from "Vague Prompts" toward **Rigorous Specifications** (Dete
 
 ---
 
+## Design UI
+
+### Login
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/5e840aa8-7980-4ead-a2bc-333736b79cde" />
+
+### Process File
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/84c39713-4de8-4f6f-a7e9-ff9d8b2d80f7" />
+
+### Result
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/572ed7cf-b3ad-464a-8aed-65335134e272" />
+
+### Historical Data
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/7d61ccb2-aa72-48dc-82c1-8330077df940" />
+
+---
+
 ## The Business Case: AI-Powered Document Insight Manager
 
 ### User Journey
