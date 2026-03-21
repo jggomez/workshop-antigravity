@@ -5,6 +5,8 @@ In the agentic era, coding is no longer about syntax; it’s about **intent and 
 #### **What is Vibe Engineering?**
 Vibe Engineering is the shift from "writing code" to **"steering outcomes."** It acknowledges that while an AI can generate text, only a human architect can ensure the "vibe" (the underlying quality, user experience, and architectural integrity) is correct. It combines the speed of generative AI with the precision of **Spec-Driven Development (SDD)** to eliminate the "gravity" of boilerplate tasks.
 
+* **Read this blog:** [Vibe Engineering: How to Build Pro-Grade Software Without the AI Technical Debt](https://jggomezt.medium.com/vibe-engineering-how-to-build-pro-grade-software-without-the-ai-technical-debt-ec7c0ad9d11b)
+
 ---
 
 #### **The Verification Cycle: Step-by-Step Process**
