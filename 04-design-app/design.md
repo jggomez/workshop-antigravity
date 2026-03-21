@@ -98,6 +98,3 @@ A selection of tools optimized for development speed and execution performance.
 * **AI Engine:** **Firebase AI Logic Extension** with the **gemini-3-flash-preview** model.
 
 ---
-
-**Next Recommended Step:**
-Would you like me to generate the **folder structure** following Clean Architecture or the **Firestore Security Rules** for this stack?
