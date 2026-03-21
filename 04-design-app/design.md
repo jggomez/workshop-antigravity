@@ -20,10 +20,40 @@ The following attributes are the pillars ensuring the system is production-grade
 
 Key requirements that shape the most critical technical decisions.
 
-* **ASR-01: Data Privacy:** The system must guarantee through infrastructure rules that no user can read third-party documents.
-* **ASR-02: Asynchronous AI Flow:** Document analysis must occur in the background to avoid blocking the user experience, handling automatic retries.
-* **ASR-03: Ultra-lightweight Interface:** The application must load in less than 1 second (Time-to-Interactive) using standard web technologies to maximize speed.
-* **ASR-04: Offline Persistence:** User modifications to insights must synchronize automatically once the connection is restored.
+#### **ASR-01: Identity & Data Privacy (Security)**
+* **Context:** Users upload sensitive PDF documents. These files and their derived insights must remain private and accessible only by the document owner.
+* **Solution:** Integrate **Firebase Auth** using Google Sign-In for identity. Implement **Firestore and Storage Security Rules** that validate the `request.auth.uid` against the `userid` field in each document.
+* **Justification:** Moving authorization to the infrastructure layer ensures that data cannot be leaked even if the client-side code is compromised.
+* **Pros:** Robust security, zero backend code to maintain, and seamless integration with Google’s ecosystem.
+* **Cons:** Tight coupling with Firebase's proprietary security rule language.
+
+#### **ASR-02: Automated Analysis Workflow (Reliability)**
+* **Context:** Extracting insights via LLM is an expensive and potentially slow process that may fail due to API timeouts or malformed PDFs.
+* **Solution:** Utilize the **Firebase AI Logic Extension** configured with `gemini-3-flash-preview`. The UI observes a status field in Firestore to provide real-time feedback.
+* **Justification:** An event-driven approach offloads heavy processing from the user's browser, allowing for managed retries and background execution.
+* **Pros:** Scalable, asynchronous execution, and built-in retry logic.
+* **Cons:** Potential "cold start" latency for initial cloud function triggers.
+
+#### **ASR-03: Responsive "Vibe" & Interaction (Performance)**
+* **Context:** Users require a fluid experience when navigating history or editing insights.
+* **Solution:** Use **HTML5/Tailwind CSS** for a lightweight UI and **Firestore Real-time Listeners** for state synchronization.
+* **Justification:** Eliminating heavy JavaScript frameworks reduces the bundle size and improves Time-to-Interactive (TTI), while Firestore provides immediate "optimistic" updates.
+* **Pros:** Near-instant load times, offline support, and a highly responsive UI.
+* **Cons:** Requires manual DOM manipulation or a lightweight reactivity library to manage state in pure HTML.
+
+#### **ASR-04: Error Handling & Observability (Reliability)**
+* **Context:** Without a custom backend, errors in AI extraction or storage must be visible to the user to avoid "silent failures."
+* **Solution:** Implement an **Audit Log** collection in Firestore where the AI Extension writes execution status and errors.
+* **Justification:** Provides a shared log between the agent and the developer to debug failed extractions and maintain system health.
+* **Pros:** Improved troubleshooting and clear feedback for the end-user.
+* **Cons:** Small increase in Firestore write operations.
+
+#### **ASR-05: Integrity of Extracted Insights (Functional Suitability)**
+* **Context:** AI-generated insights can be "hallucinated" or malformed, potentially breaking the UI structure.
+* **Solution:** Implement a **Schema Validation** tactic in the "Human-in-the-Loop" review phase.
+* **Justification:** Ensures that all saved insights adhere to a strict structure before being persisted, preventing technical debt in the data layer.
+* **Pros:** Guaranteed data consistency and simplified frontend rendering.
+* **Cons:** Slight increase in client-side processing logic.
 
 ---
 
