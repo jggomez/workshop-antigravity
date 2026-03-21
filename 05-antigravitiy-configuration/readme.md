@@ -53,3 +53,8 @@ Workflows are saved, on-demand prompts triggered with a `/` command for repetiti
 Skills are specialized packages of knowledge (docs, scripts, or examples) that remain idle until needed.
 * **The "Progressive Disclosure" Benefit:** They prevent "tool bloat" because they are only loaded into the agent's context window when a task matches the skill's metadata.
 * **Example:** You can create a **"Firebase-AI-Logic-Skill"** containing the specific JSON schema for Gemini-3-flash-preview prompts, which the agent will only load when it's time to configure the extraction engine.
+
+```
+npx skills add firebase/agent-skills
+npx skills add google-labs-code/stitch-skills --skill design-md --global
+```
