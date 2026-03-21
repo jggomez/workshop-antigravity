@@ -201,3 +201,6 @@ Tactics are specific architectural actions used to satisfy the ASRs.
 * **Intelligence:** **Firebase AI Logic Extension** (`gemini-3-flash-preview`).
 
 ---
+
+## Copy design.md
+### Please copy design.md to the Antigravity workspace for this workshop.
