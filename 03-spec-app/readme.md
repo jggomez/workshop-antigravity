@@ -12,22 +12,6 @@ We are moving away from "Vague Prompts" toward **Rigorous Specifications** (Dete
 
 ---
 
-## Design UI
-
-### Login
-<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/5e840aa8-7980-4ead-a2bc-333736b79cde" />
-
-### Process File
-<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/84c39713-4de8-4f6f-a7e9-ff9d8b2d80f7" />
-
-### Result
-<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/572ed7cf-b3ad-464a-8aed-65335134e272" />
-
-### Historical Data
-<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/7d61ccb2-aa72-48dc-82c1-8330077df940" />
-
----
-
 ## The Business Case: AI-Powered Document Insight Manager
 
 ### User Journey
@@ -81,3 +65,19 @@ Present the final backlog in a Markdown table with the following structure:
 | **US-003** | AI Extraction | As a user, I want the system to analyze the PDF, so that I receive automated insights without manual reading. | **Given** a successful PDF upload, **When** processed by the Gemini engine, **Then** a structured list of insights appears. **Edge Case:** Implement retry logic or failure notifications if the API is latent or fails. | High |
 | **US-004** | Refinement | As a user, I want to modify AI-generated insights, so that I can ensure final data accuracy. | **Given** the generated insights list, **When** editing a field and clicking save, **Then** the database updates the record. **Edge Case:** Prevent saving empty or malformed data through strict validation. | Medium |
 | **US-005** | History | As a user, I want to view a list of previously analyzed documents, so that I can track my work over time. | **Given** the History view, **When** the page loads, **Then** the system retrieves and displays user-specific records from the database. **Edge Case:** Show a "No history found" state instead of an empty screen if no data exists. | Medium |
+
+---
+
+## Design UI
+
+### Login
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/5e840aa8-7980-4ead-a2bc-333736b79cde" />
+
+### Process File
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/84c39713-4de8-4f6f-a7e9-ff9d8b2d80f7" />
+
+### Result
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/572ed7cf-b3ad-464a-8aed-65335134e272" />
+
+### Historical Data
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/7d61ccb2-aa72-48dc-82c1-8330077df940" />
