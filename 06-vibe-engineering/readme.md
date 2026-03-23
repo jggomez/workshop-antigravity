@@ -28,6 +28,8 @@ To prevent the AI from creating a "Big Ball of Mud," every task must follow this
 * **Action:** Test the change without mercy.
 * **The Rhythm:** Apply the change → Reload the page/service → Verify the specific behavior → Ensure no regressions in existing features.
 
+<img width="960" height="540" alt="Untitled presentation" src="https://github.com/user-attachments/assets/564573f0-d3b4-464b-870e-24db11d18f6e" />
+
 ---
 
 #### **Vibe Engineering Resources**
