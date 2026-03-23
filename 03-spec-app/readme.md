@@ -68,7 +68,7 @@ Present the final backlog in a Markdown table with the following structure:
 
 ---
 
-## Design UI
+## Design UI using [Stitch](https://stitch.withgoogle.com/)
 
 ### Login
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/5e840aa8-7980-4ead-a2bc-333736b79cde" />
