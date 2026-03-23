@@ -30,10 +30,8 @@ The **Model Context Protocol (MCP)** is an open standard that connects the AI to
 #### **4. Rules: The "Laws" of the Workspace**
 Rules are baseline instructions the agent **must always follow** without being reminded in the chat.
 
-* **Rule 1: `architectural-alignment.md`**
-    > "Always follow the Clean Architecture structure defined in `/design.md`. Logic must reside in `src/use-cases`, and Firebase-specific calls must be isolated in `src/adapters`. Never bypass the established directory hierarchy."
+* **Rule 1: `architectural-fidelity-and-quality.md`**
 * **Rule 2: `spec-fidelity.md`**
-    > "Before implementation, cross-reference the `spec.md` and `design.md` files. All Acceptance Criteria (Gherkin) must be converted into test cases. Reject any implementation that violates the security tactics defined in the ASRs."
 
 #### **5. Workflows: Repeatable Industrial Processes**
 Workflows are saved, on-demand prompts triggered with a `/` command for repetitive multi-step tasks.
